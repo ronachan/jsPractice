@@ -1,0 +1,70 @@
+/* Only container itself, none of its childrens */
+h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+}
+
+/* everything inside of container (wild card) */
+
+.container * {
+    width: 33%;
+    color: black;
+}
+
+.container h1.daylen {
+    color: red;
+}
+.queue {
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 2s;
+    height: fit-content;
+    min-height: 2rem;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.queue div{
+    align-items: center;
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    width: fit-content;
+    padding: 1rem;
+    transition: all 2s;
+}
+
+.queue div:hover{
+    background-color: hotpink;
+
+}
+
+.queue div:first-child{
+    background-color: lightpink;
+}
+.queue div:last-child{
+    background-color:lightcoral;
+
+}
+.daylen {
+    background-color: blue;
+    color: black;
+    /* color: black !important; set style no matter wut */
+}
+
+.rona {
+    background-color: aqua;
+}
+
+.janelle {
+    background-color: blueviolet;
+}
+
+.buttons {
+    width: 100%;
+    justify-content: center;
+}
+
